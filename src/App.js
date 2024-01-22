@@ -1,4 +1,5 @@
 import './App.css';
+import ButtonPanier from './components/ButtonPanier';
 import Footer from './components/Footer';
 import './components/Header'
 import Header from './components/Header';
@@ -14,6 +15,7 @@ function App() {
   
   return (
     <div>
+      <ButtonPanier></ButtonPanier>
       <Header></Header>
       <ListParfums></ListParfums>
       <Footer></Footer>

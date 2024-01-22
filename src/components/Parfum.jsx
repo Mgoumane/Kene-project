@@ -14,8 +14,10 @@ function Parfum (props) {
         let userPanier = JSON.parse(localStorage.getItem("panier"));
         userPanier.push(userChoice);
         localStorage.setItem("panier", JSON.stringify(userPanier));
-        // C'est ici que je veux mettre à jour mon composant Button Panier 
-        alert(`Vous avez ajouté ${userChoice.quantity} ${userChoice.nomProduit} dans votre panier, continuez vos achats ou allez valider votre panier en haut à gauche`);
+
+        // Mise à jour du Parent
+
+        alert(`Vous avez ajouté ${userChoice.quantity} ${userChoice.nomProduit} dans votre panier, continuez vos achats ou allez valider votre panier en haut à droite`);
     }
 
     return (

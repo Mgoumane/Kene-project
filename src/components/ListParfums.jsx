@@ -2,7 +2,7 @@ import bdd from '../data/parfums.json'
 import Parfum from './Parfum';
 
 function ListParfums () {
-
+    
     return (
         <>
             <h1 className=" text-center m-5 ">CHOISISSEZ VOTRE PARFUM !</h1>

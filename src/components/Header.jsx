@@ -7,9 +7,9 @@ function Header(){
     return (
 <>
     <nav className="navbar navbar-expand-lg  mb-3">
-        <div className="container-fluid">
+        <div className="container-fluid mt-2">
             <img id='logoInNavbar' src={logo} alt="logo " />
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button className="navbar-toggler mt-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse " id="navbarNav" >
@@ -17,10 +17,6 @@ function Header(){
                     <li className="nav-item m-2">
                         <a className="nav-link active fw-bold" aria-current="page" href="#">ACCUEIL</a>
                     </li>
-                    <li className="nav-item m-2">
-                        <ButtonPanier></ButtonPanier>
-                    </li>
-                
                 </ul>
             </div>
         </div>
