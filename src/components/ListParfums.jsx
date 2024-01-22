@@ -1,7 +1,12 @@
 import bdd from '../data/parfums.json'
 import Parfum from './Parfum';
 
-function ListParfums () {
+function ListParfums (props) {
+
+    // Mise à jour du panier présent dans le App.js 
+        const updateQtePanier2 = (qte) => {
+            props.updateQtePanierFromApp(qte)
+        }
     
     return (
         <>
@@ -10,16 +15,17 @@ function ListParfums () {
                 <div className="row d-flex justify-content-around">
                     { 
                         bdd.parfums.map( (parfum) => {
-                            return <Parfum key={parfum.id.toString()} parfumsDetails = {parfum}></Parfum>
+                            return <Parfum 
+                                key={parfum.id.toString()} 
+                                parfumsDetails = {parfum}
+                                updateQtePanierFromListParfum = { updateQtePanier2 } 
+                            ></Parfum>
                         })
                     }
                 </div>
             </div>
-            
         </>
     )
-
-
 }
 
 export default ListParfums;

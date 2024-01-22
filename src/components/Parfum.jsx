@@ -1,7 +1,6 @@
 function Parfum (props) {
 
     const parfum = props.parfumsDetails
-    
 
     const validationFormulaire = (event) => {
         event.preventDefault();
@@ -14,10 +13,9 @@ function Parfum (props) {
         let userPanier = JSON.parse(localStorage.getItem("panier"));
         userPanier.push(userChoice);
         localStorage.setItem("panier", JSON.stringify(userPanier));
-
-        // Mise à jour du Parent
-
-        alert(`Vous avez ajouté ${userChoice.quantity} ${userChoice.nomProduit} dans votre panier, continuez vos achats ou allez valider votre panier en haut à droite`);
+        
+        // Mise à jour du panier présent dans le App.js 
+            props.updateQtePanierFromListParfum( parseInt(userChoice.quantity));
     }
 
     return (
