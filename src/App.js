@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Footer from './components/Footer';
+import './components/Header'
+import Header from './components/Header';
+import ListParfums from './components/ListParfums';
 
 function App() {
+
+  // Création du panier dans le local-storage si il n'hexiste pas
+  if ( !localStorage.getItem("panier")) {
+    let panierInit = [];
+    localStorage.setItem("panier", JSON.stringify(panierInit));
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header></Header>
+      <ListParfums></ListParfums>
+      <Footer></Footer>
     </div>
   );
 }
