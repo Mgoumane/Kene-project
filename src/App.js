@@ -5,7 +5,7 @@ import Header from './components/Header';
 import ButtonPanier from './components/ButtonPanier';
 import ListParfums from './components/ListParfums';
 import Footer from './components/Footer';
-import Panier from './pages/Panier';
+import Panier  from './pages/Panier';
 
 import { useState } from 'react';
 
