@@ -19,7 +19,8 @@ function Parfum (props) {
     }
 
     return (
-        <>
+        <>  
+        
             <div className="card m-5"  style={{width: "24rem"}}>
                 <img src={require(`../images/imagesParfums/${parfum.image}`)} className="card-img-top" alt="..."/>
                 <div className="card-body">
