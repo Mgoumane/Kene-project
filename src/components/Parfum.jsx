@@ -7,7 +7,9 @@ function Parfum (props) {
         const userChoice = {
             idProduit : event.target.idDuProduitChoisi.value,
             quantity : event.target.quantiteChoisi.value,
-            nomProduit : event.target.nomDuProduitChoisi.value
+            nomProduit : event.target.nomDuProduitChoisi.value,
+            prixProduit : event.target.prixDuProduitChoisi.value,
+            imageProduit : event.target.imageDuProduitChoisi.value,
         }
 
         let userPanier = JSON.parse(localStorage.getItem("panier"));
@@ -49,6 +51,8 @@ function Parfum (props) {
                         </div>
                         <input type="hidden" value={parfum.id} name="idDuProduitChoisi"/>
                         <input type="hidden" value={parfum.name} name="nomDuProduitChoisi"/>
+                        <input type="hidden" value={parfum.prix} name="prixDuProduitChoisi"/>
+                        <input type="hidden" value={parfum.image} name="imageDuProduitChoisi"/>
                         <div className="text-center mt-3">
                             <button href="#" className=" btn btn-warning ">Ajouter au panier</button>
                         </div>
