@@ -1,5 +1,19 @@
 import './App.css';
+
 import HomePage from './pages/HomePage';
+
+import { BrowserRouter as Router, RouterProvider, createBrowserRouter } from "react-router-dom"
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <HomePage/>
+  },
+  {
+    path: '/panier',
+    element: <div>Page panier</div>
+  }
+])
 
 function App() {
   
@@ -9,14 +23,7 @@ function App() {
       localStorage.setItem("panier", JSON.stringify(panierInit));
     }
 
-  return (
-    <>
-      <div>
-        <HomePage></HomePage>
-      </div>
-  
-    </>
-  );
+  return <RouterProvider router={router}/>
 
 }
 
