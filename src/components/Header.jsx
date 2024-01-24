@@ -1,11 +1,10 @@
+import '../styles/Header.css'
+
 import logo from '../images/logo-kene.png';
-import imageParfum from '../images/parfum.jpg'
-import ButtonPanier from './ButtonPanier';
 
 function Header(){
 
     return (
-<>
     <nav className="navbar navbar-expand-lg  mb-3">
         <div className="container-fluid mt-2">
             <img id='logoInNavbar' src={logo} alt="logo " />
@@ -21,11 +20,6 @@ function Header(){
             </div>
         </div>
     </nav>
-    <h1 className=" text-center text-warning-emphasis"> Kéné </h1>
-    <p className='text-center fs-4 '>Bienvenue dans votre boutique de parfums, choisissez vos articles et faites vous livrer à domicile !</p>
-    <p className='text-center fs-5 '>Nous vous proposons des parfums à des prix défiant toutes concurrences  !</p>
-    <img id='imageRuban' src={imageParfum} alt="" />
-</>
     )
 }
 

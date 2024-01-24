@@ -8,6 +8,15 @@
             "description": "Ce parfum est idéal pour ceux qui recherchent une expérience offactive légère et rafraichissante sans avoir à dépenser une fortune",
             "image": "amberOud.jpeg",
             "notes": "Bergamote, Mandarine, Nectarine, Cassis,Cardamome, Lavande, Poivre Rose, Résine d’Elémi, Bois d’Agar,Vanille, Ambroxan, Patchouli, Baume de Tolu, Musc"
+        },
+        {
+            "id": 2,
+            "name": "Musc",
+            "prix": 7.5,
+            "quantity": "30 ml",
+            "description": "Ce parfum est idéal pour ceux qui recherchent une expérience offactive légère et rafraichissante sans avoir à dépenser une fortune",
+            "image": "amberOud.jpeg",
+            "notes": "Bergamote, Mandarine, Nectarine, Cassis,Cardamome, Lavande, Poivre Rose, Résine d’Elémi"
         }
     ]
 }

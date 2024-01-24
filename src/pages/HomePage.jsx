@@ -1,10 +1,12 @@
-import '../styles/HomePage.css'
-
 import ButtonPanier from '../components/ButtonPanier';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import ListParfums from '../components/ListParfums';
+import MainImage from '../components/MainImage';
+import WelcomeText from '../components/WelcomeText';
 import { useState } from 'react';
+
+
 
 
 function HomePage () {
@@ -24,6 +26,8 @@ function HomePage () {
         <div>
           <ButtonPanier qtePanier = {qtePanier}></ButtonPanier>
           <Header></Header>
+          <WelcomeText/>
+          <MainImage></MainImage>
           <ListParfums updateQtePanierFromApp = { updateQtePanier } ></ListParfums>
           <Footer></Footer>
         </div>

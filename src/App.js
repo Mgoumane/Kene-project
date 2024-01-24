@@ -1,8 +1,10 @@
 import './App.css';
 
 import HomePage from './pages/HomePage';
+import Panier from './pages/Panier';
 
 import { BrowserRouter as Router, RouterProvider, createBrowserRouter } from "react-router-dom"
+
 
 const router = createBrowserRouter([
   {
@@ -11,7 +13,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/panier',
-    element: <div>Page panier</div>
+    element: <Panier/>
   }
 ])
 
