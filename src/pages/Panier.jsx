@@ -12,7 +12,7 @@ function Panier () {
             <nav className="navbar navbar-expand-lg  mb-3">
                 <Link to= "/">
                     <div className="container-fluid mt-2">
-                        <img id='logoInNavbar' src={logo} alt="logo " />
+                        < img id='logoInNavbar' src={logo} alt="logo " />
                     </div>
                 </Link>
                 
